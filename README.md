@@ -28,5 +28,39 @@ Esta aplicação console em C# permite calcular o rateio do custo de frete e imp
 
 - .NET Core SDK
 
+
 ## Exemplo de Uso
 
+```plaintext
+Digite o nome do produto (ou digite 'fim' para finalizar):
+Produto 1
+Digite o preço do produto:
+50
+Digite a quantidade do produto:
+2
+Digite o nome do produto (ou digite 'fim' para finalizar):
+Produto 2
+Digite o preço do produto:
+70
+Digite a quantidade do produto:
+1
+Digite o nome do produto (ou digite 'fim' para finalizar):
+fim
+Digite o custo total do frete:
+  100
+Digite o valor total cobrado em impostos:
+  50
+
+Detalhes do Produto 'Produto 1':
+  Preço: R$ 50.00
+  Quantidade: 2
+  Custo de Frete por unidade: R$ 25.00
+  Custo de Impostos por unidade: R$ 12.50
+  Custo Total por unidade (incluindo frete e impostos): R$ 62.50
+
+Detalhes do Produto 'Produto 2':
+  Preço: R$ 70.00
+  Quantidade: 1
+  Custo de Frete por unidade: R$ 35.00
+  Custo de Impostos por unidade: R$ 17.50
+  Custo Total por unidade (incluindo frete e impostos): R$ 87.50
