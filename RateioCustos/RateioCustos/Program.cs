@@ -45,6 +45,10 @@ namespace RateioCustoFrete
             Console.WriteLine("Digite o custo total do frete:");
             double custoFrete = Convert.ToDouble(Console.ReadLine());
 
+            // Solicita o valor total cobrado em impostos
+            Console.WriteLine("Digite o valor total cobrado em impostos:");
+            double valorImpostos = Convert.ToDouble(Console.ReadLine());
+
             // Calcula o preço total dos produtos
             double precoTotal = 0;
             foreach (var produto in produtos)
@@ -52,14 +56,15 @@ namespace RateioCustoFrete
                 precoTotal += produto.Value.preco * produto.Value.quantidade;
             }
 
-            // Calcula o custo do frete para cada produto e o custo total de cada produto
+            // Calcula o custo do frete e do imposto para cada produto e o custo total de cada produto
             foreach (var produto in produtos)
             {
                 double percentual = (produto.Value.preco * produto.Value.quantidade / precoTotal) * 100;
                 double custoFreteProduto = (custoFrete * percentual) / 100;
-                double custoTotalProduto = produto.Value.preco + (custoFreteProduto / produto.Value.quantidade);
+                double custoImpostosProduto = (valorImpostos * percentual) / 100;
+                double custoTotalProduto = produto.Value.preco + (custoFreteProduto / produto.Value.quantidade) + (custoImpostosProduto / produto.Value.quantidade);
 
-                Console.WriteLine($"Custo total do Produto '{produto.Key}' (incluindo frete): R$ {custoTotalProduto:F2}");
+                Console.WriteLine($"Custo total do Produto '{produto.Key}' (incluindo frete e impostos): R$ {custoTotalProduto:F2}");
             }
 
             Console.ReadLine();
