@@ -32,23 +32,23 @@ Esta aplicação console em C# permite calcular o rateio do custo de frete e imp
 ## Exemplo de Uso
 
 ```plaintext
-Digite o nome do produto (ou digite 'fim' para finalizar):
+**Digite o nome do produto (ou digite 'fim' para finalizar):**
 Produto 1
-Digite o preço do produto:
+**Digite o preço do produto:**
 50
-Digite a quantidade do produto:
+**Digite a quantidade do produto:**
 2
-Digite o nome do produto (ou digite 'fim' para finalizar):
+**Digite o nome do produto (ou digite 'fim' para finalizar):**
 Produto 2
-Digite o preço do produto:
+**Digite o preço do produto:**
 70
-Digite a quantidade do produto:
+**Digite a quantidade do produto:**
 1
-Digite o nome do produto (ou digite 'fim' para finalizar):
+**Digite o nome do produto (ou digite 'fim' para finalizar):**
 fim
-Digite o custo total do frete:
+**Digite o custo total do frete:**
   100
-Digite o valor total cobrado em impostos:
+**Digite o valor total cobrado em impostos:**
   50
 
 Detalhes do Produto 'Produto 1':
