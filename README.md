@@ -47,9 +47,9 @@ Digite a quantidade do produto:
 Digite o nome do produto (ou digite 'fim' para finalizar):
 fim
 Digite o custo total do frete:
-100
+  100
 Digite o valor total cobrado em impostos:
-50
+  50
 
 Detalhes do Produto 'Produto 1':
   Preço: R$ 50.00
@@ -64,4 +64,3 @@ Detalhes do Produto 'Produto 2':
   Custo de Frete por unidade: R$ 35.00
   Custo de Impostos por unidade: R$ 17.50
   Custo Total por unidade (incluindo frete e impostos): R$ 87.50
-```
